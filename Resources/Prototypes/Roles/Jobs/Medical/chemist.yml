@@ -68,10 +68,10 @@
   name: job-name-chemist
   description: job-description-chemist
   playTimeTracker: JobChemist
-#  requirements:
-#    - !type:DepartmentTimeRequirement
-#      department: Medical
-#      time: 18000 #5 hrs
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 18000 #5 hrs
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo
@@ -106,5 +106,5 @@
     head: ClothingHeadHatBeretMedic
     mask: ClothingMaskSterile
     neck: ClothingNeckStethoscope
-    outerClothing: ClothingOuterCoatLabChem
+    outerClothing: ClothingOuterCoatLabChemz
     gloves: ClothingHandsGlovesLatex
