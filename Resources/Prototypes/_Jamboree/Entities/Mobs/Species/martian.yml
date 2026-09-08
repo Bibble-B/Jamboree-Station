@@ -1,0 +1,64 @@
+﻿
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobMartian
+  name: Urist McMartian
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+    sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
+    state: full
+  - type: Thirst
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: LanguageKnowledge # Einstein Engines - Languages
+    speaks:
+    - TauCetiBasic
+    - Marish
+    understands:
+    - TauCetiBasic
+    - Marish
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+  - type: Inventory
+    displacements:
+      head:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: head
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: outerclothing_hardsuit
+      gloves:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: hands
+  - type: Sprinter # Goob Change: human major
+    staminaDrainRate: 8
+
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobHumanDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
