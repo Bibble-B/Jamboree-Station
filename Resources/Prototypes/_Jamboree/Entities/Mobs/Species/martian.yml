@@ -25,7 +25,7 @@
     - TauCetiBasic
     - Marish
   - type: HumanoidAppearance
-    species: Human
+    species: Martian
     hideLayersOnEquip:
     - Hair
     - Snout
@@ -36,11 +36,6 @@
           32:
             sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
             state: head
-      outerClothing:
-        sizeMaps:
-          32:
-            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
-            state: outerclothing_hardsuit
       gloves:
         sizeMaps:
           32:
@@ -52,13 +47,18 @@
 
 - type: entity
   parent: BaseSpeciesDummy
-  id: MobHumanDummy
+  id: MobMartianDummy
   categories: [ HideSpawnMenu ]
   components:
   - type: Inventory
-    femaleDisplacements:
-      jumpsuit:
+    displacements:
+      head:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Human/displacement.rsi
-            state: jumpsuit-female
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: head
+      gloves:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: hands

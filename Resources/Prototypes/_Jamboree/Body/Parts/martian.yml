@@ -30,15 +30,15 @@
 # TODO: Add descriptions (many)
 # TODO BODY: Part damage
 - type: entity
-  id: PartHuman
+  id: PartMartian
   parent: [BaseItem, BasePart]
-  name: "human body part"
+  name: "martian body part"
   abstract: true
   components:
   - type: Icon # Shitmed Change
-    sprite: Mobs/Species/Human/parts.rsi
+    sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
   - type: BodyPart # Shitmed Change
-    species: Human
+    species: Martian
   - type: Extractable
     juiceSolution:
       reagents:
@@ -48,13 +48,13 @@
         Quantity: 10
 
 - type: entity
-  id: ChestHuman
-  name: "human chest"
-  parent: [PartHuman, BaseChest]
+  id: ChestMartian
+  name: "martian bulb"
+  parent: [PartMartian, BaseChest, BaseGroin, BaseHead]
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "chest_m"
+    sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
+    state: "head"
   - type: Extractable
     juiceSolution:
       reagents:
@@ -64,109 +64,50 @@
         Quantity: 20
 
 - type: entity
-  id: GroinHuman
-  name: "human groin"
-  parent: [PartHuman, BaseGroin]
+  id: LeftArmMartian
+  name: "left martian tentacle"
+  parent: [PartMartian, BaseLeftArm]
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "groin_m"
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: Fat
-        Quantity: 10
-      - ReagentId: Blood
-        Quantity: 20
+    sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
+    state: "left_arm"
 
 - type: entity
-  id: HeadHuman
-  name: "human head"
-  parent: [PartHuman, BaseHead]
+  id: RightArmMartian
+  name: "right martian tentacle"
+  parent: [PartMartian, BaseRightArm]
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "head_m"
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: Fat
-        Quantity: 5
-      - ReagentId: Blood
-        Quantity: 10
+    sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
+    state: "right_arm"
 
 - type: entity
-  id: LeftArmHuman
-  name: "left human arm"
-  parent: [PartHuman, BaseLeftArm]
+  id: LeftHandMartian
+  name: "left martian tentacle tip"
+  parent: [PartMartian, BaseLeftHand]
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "l_arm"
-
-- type: entity
-  id: RightArmHuman
-  name: "right human arm"
-  parent: [PartHuman, BaseRightArm]
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "r_arm"
-
-- type: entity
-  id: LeftHandHuman
-  name: "left human hand"
-  parent: [PartHuman, BaseLeftHand]
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "l_hand"
+    sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
+    state: "left_hand"
   - type: DoAfterDelayMultiplier # Goobstation
     multiplier: 0.9
 
 - type: entity
-  id: RightHandHuman
-  name: "right human hand"
-  parent: [PartHuman, BaseRightHand]
+  id: RightHandMartian
+  name: "right martian tentacle tip"
+  parent: [PartMartian, BaseRightHand]
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "r_hand"
+    sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
+    state: "right_hand"
   - type: DoAfterDelayMultiplier # Goobstation
     multiplier: 0.9
 
 - type: entity
-  id: LeftLegHuman
-  name: "left human leg"
-  parent: [PartHuman, BaseLeftLeg]
+  id: LegsMartian
+  name: "martian tentacle bundle"
+  parent: [PartMartian, BaseLeftLeg, BaseRightLeg, BaseLeftFoot, BaseRightFoot]
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "l_leg"
-
-- type: entity
-  id: RightLegHuman
-  name: "right human leg"
-  parent: [PartHuman, BaseRightLeg]
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "r_leg"
-
-- type: entity
-  id: LeftFootHuman
-  name: "left human foot"
-  parent: [PartHuman, BaseLeftFoot]
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "l_foot"
-
-- type: entity
-  id: RightFootHuman
-  name: "right human foot"
-  parent: [PartHuman, BaseRightFoot]
-  components:
-  - type: Sprite
-    sprite: Mobs/Species/Human/parts.rsi
-    state: "r_foot"
+    sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
+    state: "legs"
