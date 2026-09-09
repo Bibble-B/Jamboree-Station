@@ -5,6 +5,20 @@
 # Snout
 
 # Eyes
+- type: marking
+  id: MartianEyeshine
+  bodyPart: Eyes
+  markingCategory: Snout
+  speciesRestriction: [ Martian ]
+  forcedColoring: true
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: _Jamboree/Mobs/Customization/Martian/martian_markings.rsi
+    state: eyeshine
 
 # RArm
 

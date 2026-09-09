@@ -46,7 +46,8 @@
   points:
     Snout:
       points: 1
-      required: false
+      required: true
+      defaultMarkings: [ MartianEyeshine ]
     Tail:
       points: 2 # DEN - 2 points
       required: false

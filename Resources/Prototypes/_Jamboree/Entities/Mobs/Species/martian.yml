@@ -12,11 +12,57 @@
     sprite: _Jamboree/Mobs/Species/Martian/parts.rsi
     state: full
   - type: Thirst
+  - type: Carriable
   - type: Butcherable
     butcheringType: Spike
     spawned:
     - id: FoodMeatHuman
       amount: 5
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    layers:
+      - map: [ "enum.HumanoidVisualLayers.Chest" ]
+      - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+      - map: [ "enum.HumanoidVisualLayers.Snout" ]
+      - map: [ "enum.HumanoidVisualLayers.RArm" ]
+      - map: [ "enum.HumanoidVisualLayers.LArm" ]
+      - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.Underwear" ]
+      - map: [ "enum.HumanoidVisualLayers.Undershirt" ]
+      - map: [ "jumpsuit" ]
+      - map: [ "enum.HumanoidVisualLayers.LHand" ]
+      - map: [ "enum.HumanoidVisualLayers.RHand" ]
+      - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+      - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+      - map: [ "gloves" ]
+      - map: [ "shoes" ]
+      - map: [ "eyes" ]
+      - map: [ "belt" ]
+      - map: [ "id" ]
+      - map: [ "outerClothing" ]
+      - map: [ "back" ]
+      - map: [ "enum.HumanoidVisualLayers.Tail" ] #layered above the back, maybe has very very minor balance implications (hiding guns behind your wings) but i think it's fine.
+      - map: [ "ears" ] #above tail for over-ear headsets specifically. this means they layer over backpacks and outerclothing too, unsure about that right now.
+      - map: [ "neck" ]
+      - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+      - map: [ "enum.HumanoidVisualLayers.Hair" ]
+      - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+      - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+      - map: [ "mask" ]
+      - map: [ "head" ]
+      - map: [ "pocket1" ]
+      - map: [ "pocket2" ]
+      - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+        color: "#ffffff"
+        sprite: Objects/Misc/handcuffs.rsi
+        state: body-overlay-2
+        visible: false
+      - map: [ "clownedon" ]
+        sprite: "Effects/creampie.rsi"
+        state: "creampie_anomalocarid"
+        visible: false
   - type: LanguageKnowledge # Einstein Engines - Languages
     speaks:
     - TauCetiBasic
@@ -24,13 +70,21 @@
     understands:
     - TauCetiBasic
     - Marish
+  - type: Body
+    prototype: Martian
+    requiredLegs: 1
   - type: HumanoidAppearance
     species: Martian
     hideLayersOnEquip:
     - Hair
-    - Snout
   - type: Inventory
+    speciesId: martian
     displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: jumpsuit
       head:
         sizeMaps:
           32:
@@ -41,7 +95,7 @@
           32:
             sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
             state: hands
-  - type: Sprinter # Goob Change: human major
+  - type: Sprinter
     staminaDrainRate: 8
 
 
