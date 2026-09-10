@@ -16,8 +16,7 @@
   oldAge: 260
   maxAge: 360 # pre-contact thavens?? idk
   averageHeight: 188 # Thaven sprites are roughly 4" taller than standard humanoid sprites, this makes their height values display accurately
-  sizeRatio: 1.15 # Thaven height/weight ratios are a bit more constrained than other species so they don't get too misshapen
-  minHeight: 0.85 # 5'3" (160cm)
+  sizeRatio: 1.15
   #defaultHeight: 1
   maxHeight: 1.217 # 7'6" (229cm)
   minWidth: 0.75 # 11" (30cm)

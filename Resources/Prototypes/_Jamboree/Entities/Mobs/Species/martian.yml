@@ -78,6 +78,7 @@
     hideLayersOnEquip:
     - Hair
   - type: Inventory
+    templateId: martian
     speciesId: martian
     displacements:
       jumpsuit:
@@ -85,19 +86,44 @@
           32:
             sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
             state: jumpsuit
-      head:
-        sizeMaps:
-          32:
-            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
-            state: head
       gloves:
         sizeMaps:
           32:
             sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
             state: hands
+      ears:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: ears
+      back:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: back
+      suitstorage:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: suitStorage
+      neck:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: neck
   - type: Sprinter
     staminaDrainRate: 8
-
+  - type: Hands
+    leftHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+          state: inhand-left
+    rightHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+          state: inhand-right
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -105,14 +131,36 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Inventory
+    templateId: martian
+    speciesId: martian
     displacements:
-      head:
+      jumpsuit:
         sizeMaps:
           32:
             sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
-            state: head
+            state: jumpsuit
       gloves:
         sizeMaps:
           32:
             sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
             state: hands
+      ears:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: ears
+      back:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: back
+      suitstorage:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: suitStorage
+      neck:
+        sizeMaps:
+          32:
+            sprite: _Jamboree/Mobs/Species/Martian/displacement.rsi
+            state: neck

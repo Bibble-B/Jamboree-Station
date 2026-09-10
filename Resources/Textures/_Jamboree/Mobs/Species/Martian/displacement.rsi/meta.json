@@ -19,6 +19,30 @@
             "directions": 4
         },
         {
+            "name": "back",
+            "directions": 4
+        },
+        {
+            "name": "ears",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "suitStorage",
+            "directions": 4
+        },
+        {
+            "name": "neck",
+            "directions": 4
+        },
+        {
             "name": "hands",
             "directions": 4
         }
