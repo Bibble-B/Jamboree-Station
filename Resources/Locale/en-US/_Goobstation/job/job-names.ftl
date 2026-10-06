@@ -24,6 +24,8 @@ job-name-navy-captain = Navy Captain
 job-name-diplomat = Diplomat
 job-name-inspector = Central Command Auditor
 job-name-nct = Nanotrasen Career Trainer
+job-name-special-operations-officer = Special Operations Officer
+# Above is from Jamboree. For some reason they forgot to put em in.
 
 # Syndicate
 
@@ -57,3 +59,5 @@ JobMercenaryCaptain = Mercenary Captain
 JobRoboticist = Roboticist
 JobRadioHost = Radio Host
 JobVirologist = Virologist
+JobSpecialOperationsOfficer = Special Operations Officer
+# Above is Jamboree addition, apparently they left out the Special Operations officer

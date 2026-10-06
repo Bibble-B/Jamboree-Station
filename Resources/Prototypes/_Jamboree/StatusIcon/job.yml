@@ -8,6 +8,7 @@
   icon:
     sprite: /Textures/_Jamboree/Interface/Misc/job_icons.rsi # jamboree
     state: diplomat
+  jobName: job-name-diplomat
 
 - type: jobIcon
   parent: JobIcon
@@ -15,6 +16,7 @@
   icon:
     sprite: /Textures/_Jamboree/Interface/Misc/job_icons.rsi # jamboree
     state: inspector
+  jobName: job-name-inspector
 
 - type: jobIcon
   parent: JobIcon
@@ -22,6 +24,7 @@
   icon:
     sprite: /Textures/_Jamboree/Interface/Misc/job_icons.rsi # jamboree
     state: navycaptain
+  jobName: job-name-navy-captain
 
 - type: jobIcon
   parent: JobIcon
@@ -29,6 +32,7 @@
   icon:
     sprite: /Textures/_Jamboree/Interface/Misc/job_icons.rsi # jamboree
     state: navyofficer
+  jobName: job-name-navy-officer
 
 - type: jobIcon
   parent: JobIcon
@@ -36,6 +40,7 @@
   icon:
     sprite: /Textures/_Jamboree/Interface/Misc/job_icons.rsi # jamboree
     state: specialoperationsofficer
+  jobName: job-name-special-operations-officer
 
 - type: jobIcon
   parent: JobIcon
@@ -43,3 +48,4 @@
   icon:
     sprite: /Textures/_Jamboree/Interface/Misc/job_icons.rsi # jamboree
     state: hecu
+  jobName: job-name-hecu
